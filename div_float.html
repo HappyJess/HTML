@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>DIV——float控制</title>
+	<style>
+		#container{
+			width: 1000px;
+			background: gray;
+		}
+		#header{
+			width:1000px;
+			height: 200px;
+			background: blue;
+		}
+		#main{
+			width: 1000px;
+			height: 500px;
+			background: orange;
+		}
+		#lside{
+			float: left;
+			width: 700px;
+			height: 500px;
+			background: pink;
+		}
+		#rside{
+			float: right;
+			width: 300px;
+			height: 500px;
+			background: green;
+		}
+		#footer{
+			width: 1000px;
+			height: 100px;
+			background: purple;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id='container'>
+		<div id='header'></div>
+		<div id='main'>
+			<div id='lside'></div>
+			<div id='rside'></div>
+		</div>
+		<div id='footer'></div>
+	</div>
+	
+</body>
+</html>
