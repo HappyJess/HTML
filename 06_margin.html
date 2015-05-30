@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>DIV盒模型之margin设置</title>
+	<style>
+		#cont{
+			width: 1000px;
+			height: 600px;
+			background: green;
+		}
+		div{
+			width: 400px;
+			height: 200px;
+			background: blue;
+			float: left;
+		}
+		#test{
+			/* 
+			*/
+			/*
+				margin-top: 10px;
+				margin-bottom: 20px;
+				margin-right: 30px;
+				margin-left: 40px;
+				可以简化为下面的情况，顺时针的排序
+				margin:10px 30px 20px 40px;
+				如果margin值不够4个，没有的那边取对边的值
+			 */
+			margin:10px 30px 20px 40px;
+			background: red;
+		}
+		#test2{
+			background: orange;
+		}
+		#test3{
+			width: 1000px;
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="cont">
+		<div id="test"></div>
+		<div id="test2"></div>
+		<div id="test3"></div>
+	</div>
+</body>
+</html>
