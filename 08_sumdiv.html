@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>div的margin、border和padding总结</title>
+	<style>
+		#main{
+			width: 300px;
+			height: 200px;
+			background: gray;
+			margin: 50px;
+			border:10px solid blue;
+			padding: 50px;
+		}
+		#distance{
+			width: 500px;
+			height: 200px;
+			margin: 100px;
+			background: purple;
+		}
+		#far{
+			width: 500px;
+			height: 400px;
+			margin:150px;
+			background: gray;
+		}
+		#son{
+			height: 300px;
+			margin-top: 200px;
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+	<div id='main'>
+		整个DIV的宽度是margin-left+border-left+padding-left+width+margin-right+border-right+padding-right。 <br />
+		整个DIV的高度是margin-top+border-top+padding-top+width+margin-bottom+border-bottom+padding-bottom。
+	</div>
+	<div id='distance'>上面的名为main的DIV的margin外边距的大小为50px，本DIV的margin的大小为100px，本DIV的上边距离上面的DIV的下边的距离为100px，这称为div的覆盖。取最大的那个</div>
+	<div id='far'>
+		<div id='son'>父div和子div的margin，取最大的那个。本例父div的margin为150px，子div的margin-top为200px，取200px。</div>
+	</div>
+	
+</body>
+</html>
