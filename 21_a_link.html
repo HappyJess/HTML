@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>a标签伪类的作用及书写顺序</title>
+	<style>
+		a:link{
+			color: red;
+		}
+		a:visited{
+			color: purple;
+		}
+		a:hover{
+			color: blue;
+		}
+		a:active{
+			color: green;
+		}
+		/*可以简答的记为“lv包hao用”，其实本质就是谁覆盖谁的问题。*/
+	</style>
+</head>
+<body>
+	<a href="#">标签1</a>
+	<a href="#1">标签2</a>
+	<a href="#2">标签3</a>
+	<a href="#3">标签4</a>
+</body>
+</html>
